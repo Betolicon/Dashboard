@@ -2,12 +2,14 @@ body,
 html {
   height: 100%;
   margin: 0;
+  padding: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 :root{
     --background: #17d07a; 
     --color: white;
+    --second-color: rgb(226, 232, 240);
 }
 
 .container{
@@ -18,9 +20,10 @@ html {
 }
 
 .main-content{
+    height: 100%;
     grid-column: 2;
     display: grid;
-    grid-row: 1fr 2fr;
+    grid-row: 1fr 3fr;
 }
 
 .header{
@@ -28,18 +31,84 @@ html {
     grid-template-columns: 3fr 1fr;
     box-shadow: gainsboro 2px 2px 10px;
     padding: 10px;
+    gap: 12px;
+}
+
+.search-bar{
+    display: grid;
+    grid-template-columns: 25px 2fr;
+    align-items: center;
+    column-gap: 10px;
 }
 
 .bar{
-    height: 25px;
-    width: 60%;
-    background-color: rgba(136, 136, 136, 0.448);
-    border-radius: 10px 10px 10px 10px;
-    grid-column: 1;
+    border: 0;
+    width: 75%;
+    height: 30px;
+	background-color: var(--second-color);
+    border-radius: 20px;
+}
+
+#search{
+    height: auto;
+    width: 25px;
 }
 
 .items{
-    grid-column: 2;
+    grid-column: span 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    column-gap: 8px;
+}
+
+.name{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    align-items: center;
+    column-gap: 8px;
+}
+
+#Bigger{
+    height: auto;
+    width: 50px;
+}
+
+#UserName{
+    font-weight: bold;
+    font-size: large;
+}
+
+.card-projects{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card-projects .card{
+    border-left: 5px solid #00be69;
+    padding: 28px;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+}
+
+.description{
+    align-self: center;
+    padding: 6px;
+}
+
+.images{
+    display: grid;
+    grid-template-columns: repeat(3, 25px);
+    align-items: center;
+    column-gap: 8px;
 }
 
 button{
@@ -66,19 +135,36 @@ button{
 .main{
     display: grid;
     grid-template-columns: 3fr 1fr;
-    background-color: rgb(226, 232, 240);
+    background-color: var(--second-color);
     padding: 10px;
+    column-gap: 20px;
 }
 
 .card{
     background-color: white;
-    padding: 18px 14px;
-    border-radius: 10px 10px 10px;
-    box-shadow: gainsboro 1px 10px 10px;
+    padding: 18px 18px;
+    border-radius: 10px;
+    box-shadow: #bbb 1px 10px 10px;
 }
 
 p{
     font-size: 12px;
     font-weight:normal;
-    color:rgb(183, 183, 183);
+    color:rgb(160, 156, 156);
+    padding-bottom: 8px;   
+}
+
+.card h4{
+    margin: 0;
+}
+
+.card-items{
+    padding: 6px;
+    display: grid;
+    grid-template-columns: 25px 1fr;
+    column-gap: 8px;
+}
+
+#first, #second{
+    border-bottom: 1px solid gainsboro;
 }

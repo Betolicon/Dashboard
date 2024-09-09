@@ -32,20 +32,20 @@
         <div class="main-content">
             <div class="header">
             <div class="search-bar">
-                <img src="" alt="">
-                <div class="bar">
-
-                </div>
+                <img src="images/magnify.svg" alt="Magnify" id="search">
+                <input type="search" class="bar">
             </div>
             <div class="items">
-                <img src="" alt="">
-                <img src="" alt="">
+                <img src="images/bell-ring-outline.svg" alt="Notifications" id="search">
+                <img src="images/account-circle.svg" alt="User" id="search">
                 <span>Alberto Alvarado</span>
             </div>
             <div class="name">
-                <img src="" alt="">
-                <span>Welcome,</span>
-                <h3>Alberto Alvarado (betolicontti)</he>
+                <img src="images/account-circle.svg" alt="User" id="Bigger">
+                <div>
+                <span>Welcome,</span><br>
+                <span id="UserName">Alberto Alvarado (@betolicontti)</span>
+                </div>
             </div>
             <div class="buttons">
                 <button>New</button>
@@ -56,6 +56,86 @@
             <div class="main">
                 <div class="projects">
                     <h3>Your projects</h3>
+                    <div class="card-projects">
+                        <div class="card">
+                            <div class="description">
+                                <h4>Super Cool Project</h4>
+                                Sed tempus ut lacus ut scelerisque. <br>
+                                Suspendisse sollicituden nibh erat, id <br>
+                                facilisis felis accumsan nec.
+                            </div>
+                            <div class="images">
+                                <img src="images/pencil-outline.svg" alt="Edit" id="search">
+                                <img src="images/delete.svg" alt="Delete" id="search">
+                                <img src="images/share-variant-outline.svg" alt="Share" id="search">
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="description">
+                                <h4>Less Cool Project</h4>
+                                Sed tempus ut lacus ut scelerisque. <br>
+                                Suspendisse sollicituden nibh erat, id <br>
+                                facilisis felis accumsan nec.
+                            </div>
+                            <div class="images">
+                                <img src="images/pencil-outline.svg" alt="Edit" id="search">
+                                <img src="images/delete.svg" alt="Delete" id="search">
+                                <img src="images/share-variant-outline.svg" alt="Share" id="search">
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="description">
+                                <h4>Impossible App</h4>
+                                Sed tempus ut lacus ut scelerisque. <br>
+                                Suspendisse sollicituden nibh erat, id <br>
+                                facilisis felis accumsan nec.
+                            </div>
+                            <div class="images">
+                                <img src="images/pencil-outline.svg" alt="Edit" id="search">
+                                <img src="images/delete.svg" alt="Delete" id="search">
+                                <img src="images/share-variant-outline.svg" alt="Share" id="search">
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="description">
+                                <h4>Easy Peasy App</h4>
+                                Sed tempus ut lacus ut scelerisque. <br>
+                                Suspendisse sollicituden nibh erat, id <br>
+                                facilisis felis accumsan nec. 
+                            </div>
+                            <div class="images">
+                                <img src="images/pencil-outline.svg" alt="Edit" id="search">
+                                <img src="images/delete.svg" alt="Delete" id="search">
+                                <img src="images/share-variant-outline.svg" alt="Share" id="search">
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="description">
+                                <h4>Ad Blocker</h4>
+                                Sed tempus ut lacus ut scelerisque. <br>
+                                Suspendisse sollicituden nibh erat, id <br>
+                                facilisis felis accumsan nec.
+                            </div>
+                            <div class="images">
+                                <img src="images/pencil-outline.svg" alt="Edit" id="search">
+                                <img src="images/delete.svg" alt="Delete" id="search">
+                                <img src="images/share-variant-outline.svg" alt="Share" id="search">
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="description">
+                                <h4>Money Maker</h4>
+                                Sed tempus ut lacus ut scelerisque. <br>
+                                Suspendisse sollicituden nibh erat, id <br>
+                                facilisis felis accumsan nec.
+                            </div>
+                            <div class="images">
+                                <img src="images/pencil-outline.svg" alt="Edit" id="search">
+                                <img src="images/delete.svg" alt="Delete" id="search">
+                                <img src="images/share-variant-outline.svg" alt="Share" id="search">
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="lists">
                     <div>
@@ -63,14 +143,14 @@
                         <div class="card">
                             <div>
                                 <h4>Site Maintenance</h4>
-                                <p>Vestibulum condimentum tellus lacus, 
+                                <p id="first">Vestibulum condimentum tellus lacus, 
                                 in accumsan elit maximus ac. Donec 
                                 hendrerit sodales congue...</p>
 
                             </div>
                             <div>
                                 <h4>Community Share day</h4>
-                                <p>Nam vel lectus tincidunt, rutrum nulla 
+                                <p id="second">Nam vel lectus tincidunt, rutrum nulla 
                                     eu, ornare libero. Aliquam dictum 
                                     accumsan porttitor...</p>
                             </div>
@@ -86,25 +166,33 @@
                     <div>
                         <h3>Trending</h3>
                         <div class="card">
-                            <div>
-                                <h4>Site Maintenance</h4>
-                                <p>Vestibulum condimentum tellus lacus, 
-                                in accumsan elit maximus ac. Donec 
-                                hendrerit sodales congue...</p>
-
+                            <div class="card-items">
+                                <img src="images/account-circle.svg" alt="photo" id="search">
+                                <div>
+                                    <h4>@tegan</h4>
+                                    World Peace Builder 
+                                </div>
                             </div>
-                            <div>
-                                <h4>Community Share day</h4>
-                                <p>Nam vel lectus tincidunt, rutrum nulla 
-                                    eu, ornare libero. Aliquam dictum 
-                                    accumsan porttitor...</p>
+                            <div class="card-items">
+                                <img src="images/account-circle.svg" alt="photo" id="search">
+                                <div>
+                                    <h4>@morgan</h4>
+                                    Super Cool Project
+                                </div>
                             </div>
-                            <div>
-                                <h4>Updated Privacy Policy</h4>
-                                <p>Phasellus efficityr nisi eget elit
-                                    consectetur, eget condimentum ante
-                                    auctor. Cras fringilla sigittis sem in
-                                    mattis...</p>
+                            <div class="card-items">
+                                <img src="images/account-circle.svg" alt="photo" id="search">
+                                <div>
+                                    <h4>@kendall</h4>
+                                    Life Changing App
+                                </div>
+                            </div>
+                            <div class="card-items">
+                                <img src="images/account-circle.svg" alt="photo" id="search">
+                                <div>
+                                    <h4>@alex</h4>
+                                    No Traffic Maker
+                                </div>
                             </div>
                         </div>
                     </div>
